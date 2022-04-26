@@ -25,7 +25,7 @@ Para conferir o funcionamento do programa, basta utilizar o comando `npm start`.
   <li>React.js</li>
 </ul>
 
-## Autor
+## Autor 🤓
 
 <li>Henrique Medeiros</li>
 <br>
