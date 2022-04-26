@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Botao from './components/botao';
 import * as math from 'mathjs';
 import './styles.css';
@@ -6,6 +6,11 @@ import './styles.css';
 const arrOper = ['*', '/', '+', '-', '.']
 
 function App() {
+
+  useEffect(() => {
+    document.title = "React4Calculator"
+  }, []);
+
   const [input, setInput] = useState("");
 
   function insereNum(val){
