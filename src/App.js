@@ -32,13 +32,13 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Calculadora com React</h1>
+      <h1>React4Calculator</h1>
       <div className='calc-wrapper'>
         <Botao isInput>{input}</Botao>
         <div className='linha'>
           <Botao onClick={() => setInput("")}>CE</Botao>
           <Botao onClick={() => setInput(input.slice(0, -1))}>C</Botao>
-          <Botao>%</Botao>
+          <Botao onClick={() => setInput(input/100)}>%</Botao>
           <Botao onClick={insereOperacao}>/</Botao>
         </div>
 
@@ -64,7 +64,7 @@ function App() {
         </div>
 
         <div className='linha'>
-          <Botao>+/-</Botao>
+          <Botao onClick={() => setInput(input*(-1))}>+/-</Botao>
           <Botao onClick={insereNum}>0</Botao>
           <Botao onClick={insereOperacao}>.</Botao>
           <Botao onClick={calc}>=</Botao>
